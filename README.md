@@ -2,11 +2,16 @@
 
 Código criado para a disciplina de Arquitetura de Software turma ES71
 
+## Atualização #01
+- Refatoradas as classes para melhor organização do código, que ficaram disponíveis no pacote V1.
+- A título de responder o desafio proposto de reduçõ de linhas, foi feita a V2 *que deixa o código com menor manutenibilidade* mas reduz para 60 linhas.
+- Adicionado o [lombok](https://projectlombok.org/) como dependência no pom.xml
+
 ## Estrutura básica
 
-Foi desenhada uma `calculadora` baseada nos `dados de entrada` (células cinzas). O `resultado` agrupa todos os valores
-que variam de acordo com a entrada. Alguns valores que são resultados de de-para foram colocados em enumeradores ou
-variáveis estáticas.
+Foi desenhada uma `calculadora` baseada nos `dados de entrada` (células cinzas). O `resultado` é retornado mediante a
+chamada dos métodos `calcular[...]`. 
+Alguns valores que são resultados de de-para foram colocados em enumeradores ou variáveis estáticas.
 
 ## Dúvidas
 
