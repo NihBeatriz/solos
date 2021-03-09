@@ -1,4 +1,4 @@
-package domain;
+package domain.version1;
 
 public enum Textura {
 
@@ -13,8 +13,5 @@ public enum Textura {
         this.id = id;
         this.nome = nome;
         this.porcentagemArgila = porcentagemArgila;
-
     }
 }
-
-

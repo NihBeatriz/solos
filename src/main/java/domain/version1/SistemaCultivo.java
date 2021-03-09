@@ -1,4 +1,4 @@
-package domain;
+package domain.version1;
 
 public enum SistemaCultivo {
     PLANTIO_DIRETO(1, "Plantio Direto"),
