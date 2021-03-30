@@ -1,4 +1,4 @@
-package domain.version1;
+package domain.teores;
 
 public enum Textura {
 

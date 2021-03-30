@@ -1,4 +1,4 @@
-package domain.version1;
+package domain.teores;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,8 +9,8 @@ public class CalculadoraTeores {
     private Textura textura;
     private SistemaCultivo sistemaCultivo;
     private ParametrizacaoSolo amostra;
-    private double quantidadeMateriaOrganica; //M.O. (g.dm3)
-    private double porcentagemMateriaOrganica; //M.O. %
+    private double quantidadeMateriaOrganica;
+    private double porcentagemMateriaOrganica;
     private String responsavelTecnico;
     private int profundidadeAmostra;
     private int numeroResultadoAnalise;

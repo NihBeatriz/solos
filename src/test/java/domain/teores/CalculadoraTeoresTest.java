@@ -1,9 +1,9 @@
-package domain.version1;
+package domain.teores;
 
 import org.junit.jupiter.api.Test;
 
-import static domain.version1.SistemaCultivo.PLANTIO_DIRETO;
-import static domain.version1.Textura.TEXTURA_MEDIA;
+import static domain.teores.SistemaCultivo.PLANTIO_DIRETO;
+import static domain.teores.Textura.TEXTURA_MEDIA;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CalculadoraTeoresTest {
@@ -12,11 +12,12 @@ class CalculadoraTeoresTest {
     void deveCalcularCorretamenteOsValoresConformePlanilha() {
         CalculadoraTeores calculadoraTeores = getCalculadoraTeores();
 
-        assertEquals(12, calculadoraTeores.calcularParametrizacaoIdeal().getFosforo());
-        assertEquals(0.25, calculadoraTeores.calcularParametrizacaoIdeal().getPotassio());
-        assertEquals(4, calculadoraTeores.calcularParametrizacaoIdeal().getCalcio());
-        assertEquals(1, calculadoraTeores.calcularParametrizacaoIdeal().getMagnesio());
-        assertEquals(6, calculadoraTeores.calcularParametrizacaoIdeal().getEnxofre());
+        ParametrizacaoSolo parametrizacaoIdeal = calculadoraTeores.calcularParametrizacaoIdeal();
+        assertEquals(12, parametrizacaoIdeal.getFosforo());
+        assertEquals(0.25, parametrizacaoIdeal.getPotassio());
+        assertEquals(4, parametrizacaoIdeal.getCalcio());
+        assertEquals(1, parametrizacaoIdeal.getMagnesio());
+        assertEquals(6, parametrizacaoIdeal.getEnxofre());
 
         assertEquals(7.54, calculadoraTeores.calcularEnxofreCmol());
         assertEquals(12.89, calculadoraTeores.calcularCtcCmol());
