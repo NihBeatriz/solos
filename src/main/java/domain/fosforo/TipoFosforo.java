@@ -8,7 +8,7 @@ import lombok.Getter;
 public enum TipoFosforo {
     SUPERFOSFATO_SIMPLES(0.1, 0.28, 0.18, Produtos.ENXOFRE, Produtos.CALCIO),
     SUPERFOSFATO_TRIPLO(0, 0.2, 0.41, Produtos.NENHUM, Produtos.CALCIO),
-    MAP(0, 0.09, 0.42, Produtos.NENHUM, Produtos.NITROGENIO),
+    MAP(0, 0.09, 0.48, Produtos.NENHUM, Produtos.NITROGENIO),
     DAP(0, 0.16, 0.45, Produtos.NENHUM, Produtos.NITROGENIO),
     YOORIN(0.15, 0.28, 0.18, Produtos.MAGNESIO, Produtos.CALCIO),
     FOSFATO_ARAD(0, 0.52, 0.33, Produtos.NENHUM, Produtos.CALCIO),
