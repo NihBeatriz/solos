@@ -1,6 +1,6 @@
-package domain.fosforo;
+package domain;
 
-public class Produtos {
+public class Elementos {
     public static final String NENHUM = "";
     public static final String CALCIO = "Cálcio";
     public static final String ENXOFRE = "Enxofre";
