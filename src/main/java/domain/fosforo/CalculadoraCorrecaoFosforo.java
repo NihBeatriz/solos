@@ -1,5 +1,6 @@
 package domain.fosforo;
 
+import domain.Elementos;
 import lombok.Getter;
 
 import static domain.fosforo.TipoFosforo.YOORIN;
@@ -10,8 +11,8 @@ public class CalculadoraCorrecaoFosforo {
     private final double custoPorHectare;
     private final double kgHaBeneficioPrimario;
     private final double kgHaBeneficioSecundario;
-    private final String nomeBeneficioPrimario;
-    private final String nomeBeneficioSecundario;
+    private final Elementos beneficioPrimario;
+    private final Elementos beneficioSecundario;
     private final double kgPorHectare;
 
     public CalculadoraCorrecaoFosforo(TipoFosforo tipo, double valorPorTonelada, double teorAlvo, double eficiencia, double teorAtual) {
@@ -21,8 +22,8 @@ public class CalculadoraCorrecaoFosforo {
 
         kgHaBeneficioPrimario = getKgHaBeneficioPrimario(tipo);
         kgHaBeneficioSecundario = getKgHaBeneficioSecundario(tipo);
-        nomeBeneficioPrimario = tipo.getNomeBeneficioPrimario();
-        nomeBeneficioSecundario = tipo.getNomeBeneficioSecundario();
+        beneficioPrimario = tipo.getBeneficioPrimario();
+        beneficioSecundario = tipo.getBeneficioSecundario();
     }
 
     private static double getKgHectare(double teorAtual, double teorDesejado, double eficiencia, double teorP2O5) {

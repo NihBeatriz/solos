@@ -13,7 +13,7 @@ public enum TipoPotassio {
 
     private final double fatorBeneficioPrimario;
     private final double fatorBeneficioSecundario;
-    private final String nomeBeneficioPrimario;
-    private final String nomeBeneficioSecundario;
+    private final Elementos beneficioPrimario;
+    private final Elementos beneficioSecundario;
     private final double teorOxidoPotassio;
 }

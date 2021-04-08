@@ -1,5 +1,6 @@
 package domain.potassio;
 
+import domain.Elementos;
 import lombok.Getter;
 
 @Getter
@@ -9,16 +10,16 @@ public class CalculadoraCorrecaoPotassio {
     private final double custoPorHectare;
     private final double kgHaBeneficioPrimario;
     private final double kgHaBeneficioSecundario;
-    private final String nomeBeneficioPrimario;
-    private final String nomeBeneficioSecundario;
+    private final Elementos beneficioPrimario;
+    private final Elementos beneficioSecundario;
 
     CalculadoraCorrecaoPotassio(double teorPotassioAtual, double participacaoAtual, double participacaoDesejada, TipoPotassio tipoPotassio, double valorPorTonelada) {
         quantidadeAplicacaoKgPorHectare = getKgHectare(teorPotassioAtual, participacaoAtual, participacaoDesejada, tipoPotassio.getTeorOxidoPotassio());
         custoPorHectare = quantidadeAplicacaoKgPorHectare * valorPorTonelada / 1000;
         kgHaBeneficioPrimario = quantidadeAplicacaoKgPorHectare * tipoPotassio.getFatorBeneficioPrimario();
-        nomeBeneficioPrimario = tipoPotassio.getNomeBeneficioPrimario();
+        beneficioPrimario = tipoPotassio.getBeneficioPrimario();
         kgHaBeneficioSecundario = quantidadeAplicacaoKgPorHectare * tipoPotassio.getFatorBeneficioSecundario();
-        nomeBeneficioSecundario = tipoPotassio.getNomeBeneficioSecundario();
+        beneficioSecundario = tipoPotassio.getBeneficioSecundario();
     }
 
     private static double getKgHectare(double teorPotassioAtual, double participacaoAtual, double participacaoDesejada, double teorOxidoDePotassio) {

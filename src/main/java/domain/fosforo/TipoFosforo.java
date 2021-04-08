@@ -22,7 +22,7 @@ public enum TipoFosforo {
 
     private final double fatorBeneficioPrimario;
     private final double fatorBeneficioSecundario;
-    private final String nomeBeneficioPrimario;
-    private final String nomeBeneficioSecundario;
+    private final Elementos beneficioPrimario;
+    private final Elementos beneficioSecundario;
     private final double teorP205;
 }

@@ -1,5 +1,6 @@
 package domain.potassio;
 
+import domain.Elementos;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,8 +13,8 @@ class CalculadoraCorrecaoPotassioTest {
 
         assertEquals(1187.80363636364, calculadoraCorrecaoPotassio.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(2375.60727272728, calculadoraCorrecaoPotassio.getCustoPorHectare());
-        assertEquals("Enxofre", calculadoraCorrecaoPotassio.getNomeBeneficioPrimario());
-        assertEquals("Magnésio", calculadoraCorrecaoPotassio.getNomeBeneficioSecundario());
+        assertEquals(Elementos.ENXOFRE, calculadoraCorrecaoPotassio.getBeneficioPrimario());
+        assertEquals(Elementos.MAGNESIO, calculadoraCorrecaoPotassio.getBeneficioSecundario());
         assertEquals(261.3168000000008, calculadoraCorrecaoPotassio.getKgHaBeneficioPrimario());
         assertEquals(213.80465454545518, calculadoraCorrecaoPotassio.getKgHaBeneficioSecundario());
     }
@@ -24,8 +25,8 @@ class CalculadoraCorrecaoPotassioTest {
 
         assertEquals(502.5323076923092, calculadoraCorrecaoPotassio.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(1005.0646153846184, calculadoraCorrecaoPotassio.getCustoPorHectare());
-        assertEquals("Enxofre", calculadoraCorrecaoPotassio.getNomeBeneficioPrimario());
-        assertEquals("", calculadoraCorrecaoPotassio.getNomeBeneficioSecundario());
+        assertEquals(Elementos.ENXOFRE, calculadoraCorrecaoPotassio.getBeneficioPrimario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoPotassio.getBeneficioSecundario());
         assertEquals(85.43049230769257, calculadoraCorrecaoPotassio.getKgHaBeneficioPrimario());
         assertEquals(0, calculadoraCorrecaoPotassio.getKgHaBeneficioSecundario());
     }
@@ -36,8 +37,8 @@ class CalculadoraCorrecaoPotassioTest {
 
         assertEquals(450.54620689655314, calculadoraCorrecaoPotassio.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(901.0924137931063, calculadoraCorrecaoPotassio.getCustoPorHectare());
-        assertEquals("", calculadoraCorrecaoPotassio.getNomeBeneficioPrimario());
-        assertEquals("", calculadoraCorrecaoPotassio.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoPotassio.getBeneficioPrimario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoPotassio.getBeneficioSecundario());
         assertEquals(0, calculadoraCorrecaoPotassio.getKgHaBeneficioPrimario());
         assertEquals(0, calculadoraCorrecaoPotassio.getKgHaBeneficioSecundario());
     }

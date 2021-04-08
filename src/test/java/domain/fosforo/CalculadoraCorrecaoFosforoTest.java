@@ -1,5 +1,6 @@
 package domain.fosforo;
 
+import domain.Elementos;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,8 +15,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(123.95079365079366, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(12, 4, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(34.70622222222223, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("Enxofre", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.ENXOFRE, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -26,8 +27,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(47.615243902439026, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(9.523048780487805, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -38,8 +39,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(46.481547619047625, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(4.183339285714286, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Nitrogênio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.NITROGENIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -50,8 +51,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(49.58031746031746, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(7.932850793650794, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Nitrogênio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.NITROGENIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -62,8 +63,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(123.95079365079366, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(18.59261904761905, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(34.70622222222223, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("Magnésio", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.MAGNESIO, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -74,8 +75,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(67.60952380952381, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(35.15695238095238, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -86,8 +87,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(76.93497536945814, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(40.00618719211823, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -98,8 +99,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(69.72232142857143, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(31.375044642857144, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -110,8 +111,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(92.96309523809525, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(26.02966666666667, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -122,8 +123,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(120.60077220077221, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(53.06433976833977, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 
     @Test
@@ -134,8 +135,8 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(42.90604395604396, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(0, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioSecundario());
+        assertEquals(Elementos.NENHUM, calculadoraCorrecaoFosforo.getBeneficioPrimario());
     }
 
     @Test
@@ -146,7 +147,7 @@ class CalculadoraCorrecaoFosforoTest {
         assertEquals(123.95079365079366, calculadoraCorrecaoFosforo.getQuantidadeAplicacaoKgPorHectare());
         assertEquals(13.634587301587302, calculadoraCorrecaoFosforo.getKgHaBeneficioPrimario());
         assertEquals(22.31114285714286, calculadoraCorrecaoFosforo.getKgHaBeneficioSecundario());
-        assertEquals("Enxofre", calculadoraCorrecaoFosforo.getNomeBeneficioPrimario());
-        assertEquals("Cálcio", calculadoraCorrecaoFosforo.getNomeBeneficioSecundario());
+        assertEquals(Elementos.ENXOFRE, calculadoraCorrecaoFosforo.getBeneficioPrimario());
+        assertEquals(Elementos.CALCIO, calculadoraCorrecaoFosforo.getBeneficioSecundario());
     }
 }
