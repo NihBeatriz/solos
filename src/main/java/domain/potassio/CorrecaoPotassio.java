@@ -4,7 +4,7 @@ import domain.Elementos;
 import lombok.Getter;
 
 @Getter
-public class CalculadoraCorrecaoPotassio {
+public class CorrecaoPotassio {
 
     private final double quantidadeAplicacaoKgPorHectare;
     private final double custoPorHectare;
@@ -13,7 +13,7 @@ public class CalculadoraCorrecaoPotassio {
     private final Elementos beneficioPrimario;
     private final Elementos beneficioSecundario;
 
-    CalculadoraCorrecaoPotassio(double teorPotassioAtual, double participacaoAtual, double participacaoDesejada, TipoPotassio tipoPotassio, double valorPorTonelada) {
+    CorrecaoPotassio(double teorPotassioAtual, double participacaoAtual, double participacaoDesejada, TipoPotassio tipoPotassio, double valorPorTonelada) {
         quantidadeAplicacaoKgPorHectare = getKgHectare(teorPotassioAtual, participacaoAtual, participacaoDesejada, tipoPotassio.getTeorOxidoPotassio());
         custoPorHectare = quantidadeAplicacaoKgPorHectare * valorPorTonelada / 1000;
         kgHaBeneficioPrimario = quantidadeAplicacaoKgPorHectare * tipoPotassio.getFatorBeneficioPrimario();
