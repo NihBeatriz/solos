@@ -1,3 +1,50 @@
+# Atividade 3 - Refatoração
+
+## Proposta
+
+Relatório do estado atual do código, identificação de problemas, propostas de modificação com uso de
+tecnologias/patterns e a implementação dessas propostas.
+
+### Estado atual
+
+Utilizando o [_
+commit_ antes da atividade](https://github.com/e-marlos/solos/commit/7d3c1b1fb9a31f2b7e199077ae0a6b0d762d8756), o
+seguinte relatório é emitido pela ferramenta cloc:
+
+```text
+solos> cloc . --include-lang=Java
+      27 text files.
+      27 unique files.
+      52 files ignored.
+
+github.com/AlDanial/cloc v 1.88  T=0.41 s (29.1 files/s, 1143.6 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Java                            12             87              0            384
+-------------------------------------------------------------------------------
+SUM:                            12             87              0            384
+-------------------------------------------------------------------------------
+```
+
+### Problemas identificados
+
+1. Muitas estruturas repetidas nos códigos de testes
+1. Presença _dead codes_ que foram escritos para representação em uma eventual UI
+
+### Propostas (uma para cada problema)
+
+1. Utilizar recurso de testes parametrizados
+1. Remoção dos códigos sem uso
+
+### Implementações
+
+_Incluir aqui os links para commits conforme as soluções propostas_
+
+---
+
+# Abaixo, arquivo README.md anterior
+
 # solos
 
 Código criado para a disciplina de Arquitetura de Software turma ES71
@@ -35,7 +82,3 @@ foram ignorados por enquanto.
 ## Executando o código
 
 Foi feito um pacote simples com uma pasta domain e um testes de unidade (jUnit 5) para execução dos cenários.
-
-
-
-
