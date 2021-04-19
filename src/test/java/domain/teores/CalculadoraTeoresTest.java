@@ -2,7 +2,6 @@ package domain.teores;
 
 import org.junit.jupiter.api.Test;
 
-import static domain.teores.SistemaCultivo.PLANTIO_DIRETO;
 import static domain.teores.Textura.TEXTURA_MEDIA;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -29,6 +28,6 @@ class CalculadoraTeoresTest {
 
     private CalculadoraTeores getCalculadoraTeores() {
         ParametrizacaoSolo amostra = new ParametrizacaoSolo(8.59, 0.15, 5.76, 1.63, 3.76, 0, 5.35);
-        return new CalculadoraTeores(TEXTURA_MEDIA, PLANTIO_DIRETO, amostra, 30.69, 0, "", 20, 761);
+        return new CalculadoraTeores(TEXTURA_MEDIA, amostra, 30.69, 0, "", 20, 761);
     }
 }

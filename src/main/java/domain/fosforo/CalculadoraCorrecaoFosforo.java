@@ -3,8 +3,6 @@ package domain.fosforo;
 import domain.Elementos;
 import lombok.Getter;
 
-import static domain.fosforo.TipoFosforo.YOORIN;
-
 @Getter
 public class CalculadoraCorrecaoFosforo {
     private final double quantidadeAplicacaoKgPorHectare;
@@ -39,16 +37,7 @@ public class CalculadoraCorrecaoFosforo {
     }
 
     private double getKgHaBeneficioPrimario(TipoFosforo tipo) {
-        double quantidade = tipo == YOORIN ? quantidadeAplicacaoKgPorHectare : kgPorHectare;
+        double quantidade = tipo == TipoFosforo.YOORIN ? quantidadeAplicacaoKgPorHectare : kgPorHectare;
         return quantidade * tipo.getFatorBeneficioPrimario();
     }
 }
-
-
-
-
-
-
-
-
-

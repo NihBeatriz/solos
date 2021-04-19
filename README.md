@@ -7,8 +7,8 @@ tecnologias/patterns e a implementação dessas propostas.
 
 ### Estado atual
 
-Utilizando o [_
-commit_ antes da atividade](https://github.com/e-marlos/solos/commit/7d3c1b1fb9a31f2b7e199077ae0a6b0d762d8756), o
+Utilizando
+o [commit antes da atividade](https://github.com/e-marlos/solos/commit/7d3c1b1fb9a31f2b7e199077ae0a6b0d762d8756), o
 seguinte relatório é emitido pela ferramenta cloc:
 
 ```text

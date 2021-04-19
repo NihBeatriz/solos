@@ -7,7 +7,6 @@ import lombok.Data;
 @AllArgsConstructor
 public class CalculadoraTeores {
     private Textura textura;
-    private SistemaCultivo sistemaCultivo;
     private ParametrizacaoSolo amostra;
     private double quantidadeMateriaOrganica;
     private double porcentagemMateriaOrganica;
