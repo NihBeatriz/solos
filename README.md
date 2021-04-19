@@ -41,11 +41,12 @@ SUM:                            12             87              0            384
 
 Commits na linha do tempo das refatorações
 
-[Aqui](https://github.com/e-marlos/solos/commit/8f7a3d4ea732682941853ec7f750531169899f4c) está inclusão de testes
-parametrizados conforme proposta
-[Aqui](https://github.com/e-marlos/solos/commit/798698e5608225d0f5c37f585124cbb8bd3cd2eb) está a remoção dos códigos sem
-utilização conforme proposta
-[Aqui]() está alguns renames e pequenas modificações identificadas durante a refatoração
+- [Aqui](https://github.com/e-marlos/solos/commit/8f7a3d4ea732682941853ec7f750531169899f4c) está inclusão de testes
+  parametrizados conforme proposta
+- [Aqui](https://github.com/e-marlos/solos/commit/798698e5608225d0f5c37f585124cbb8bd3cd2eb) está a remoção dos códigos
+  sem utilização conforme proposta
+- [Aqui](https://github.com/e-marlos/solos/commit/aa202df49fea20d656ef21733e183713e97ae4a3) está alguns renames e
+  pequenas modificações identificadas durante a refatoração
 
 ---
 
