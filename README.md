@@ -1,3 +1,17 @@
+# Relatório da Atividade 4 
+
+## Dificuldades
+
+Por usar parametrização tive que pesquisar como funcionava, pois não tinha usado antes. 
+No geral o código está fácil de compreender, apenas no teste os valores não aceitam arredondamento,
+tendo que colocar um número muito extenso, por exemplo: 
+No teste de potassio tive que colocar 1126.365517241383 no custo por ha, pois 1126.36 dava erro.
+
+Commit dos testes:
+[Teores](https://github.com/NihBeatriz/solos/commit/426ce9b33b95aa75ac0bc9f3ec81b44c354f67de)
+[Fósforo](https://github.com/NihBeatriz/solos/commit/ff83553e411a4c6fc31f7e3da08ba6d01fa56642)
+[Potássio](https://github.com/NihBeatriz/solos/commit/f4e9d8f77f752a0761d458412b2db6be98fc9204)
+
 # Relatório da Atividade 3 - Refatoração
 
 ## Proposta
